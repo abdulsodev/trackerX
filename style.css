@@ -1,0 +1,135 @@
+:root{
+    --VeryDarkGray: hsl(0, 0%, 17%);
+    --DarkGray: hsl(0, 0%, 59%);
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+  
+}
+
+
+.container{
+    background-image: url('./images/pattern-bg-desktop.png');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+   
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 0%;
+    
+}
+
+h2{
+    margin-right: 50px;
+}
+p{
+    color: hsl(0, 0%, 59%);
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    gap: 16.2%;
+}
+
+input{
+    padding: 15px 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 220%;
+    border: none;
+  
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+
+button{
+    position: relative;
+    padding: 13px 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-top: 2px;
+    font-weight: 600;
+    height: 60px;
+    bottom: 5px;
+}
+
+
+.result{
+    display: flex;
+    gap: 100px;
+    background-color: white;
+    padding:15px 50px;
+    border-radius: 10px;
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+
+}
+
+.divider{
+    border-right: 1px solid hsla(0, 0%, 87%, 0.986);
+    box-shadow: 1px 2px hsl(0, 0%, 100%) ;
+}
+
+#map{
+    height: 500px;
+    z-index: -1;
+}
+
+@media(max-width:600px){
+
+    .container{
+        padding:20px;
+        display: grid;
+        place-items: center;
+        padding-top: 30px;
+    }
+
+
+    input{
+        padding: 15px 10px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        width: 133%;
+        border: none;
+        font-size: 17px;
+      
+    }
+
+    .result{
+       flex-direction: column;
+        gap: 1px;
+        background-color: white;
+        padding:15px 50px;
+        border-radius: 10px;
+        position: relative;        
+        z-index: 1;
+        width: auto;
+        overflow: hidden;
+        
+    }
+
+    .divider{
+        border:none;
+    }
+
+    #map{
+        height: 100vh;
+        width: 100%;
+    }
+    
+}
